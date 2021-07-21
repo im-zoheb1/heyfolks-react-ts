@@ -1,26 +1,52 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-function App() {
+import Dashboard from 'hoc/Layout/Dashboard';
+import Login from 'containers/Login/Login';
+import Signup from 'containers/Signup';
+import Home from 'containers/Home';
+import FindFriends from 'containers/FindFriends';
+import Messages from 'containers/Messages';
+import Notifications from 'containers/Notifications';
+import Profile from 'containers/Profile';
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/profile">
+          <Dashboard>
+            <Profile></Profile>
+          </Dashboard>
+        </Route>
+        <Route path="/notifications">
+          <Dashboard>
+            <Notifications></Notifications>
+          </Dashboard>
+        </Route>
+        <Route path="/messages">
+          <Dashboard>
+            <Messages></Messages>
+          </Dashboard>
+        </Route>
+        <Route path="/findfriends">
+          <Dashboard>
+            <FindFriends></FindFriends>
+          </Dashboard>
+        </Route>
+        <Route path="/home">
+          <Dashboard>
+            <Home></Home>
+          </Dashboard>
+        </Route>
+        <Route path="/signup">
+          <Signup />
+        </Route>
+        <Route path="/">
+          <Login />
+        </Route>
+      </Switch>
+    </Router>
   );
-}
+};
 
 export default App;
