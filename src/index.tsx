@@ -3,7 +3,9 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import { ThemeProvider } from 'styled-components';
 import GlobalStyles from 'globalStyles/index';
+import { myTheme } from 'globalStyles/theme';
 
 import WebFont from 'webfontloader';
 
@@ -16,7 +18,9 @@ WebFont.load({
 ReactDOM.render(
   <React.StrictMode>
     <GlobalStyles />
-    <App />
+    <ThemeProvider theme={myTheme}>
+      <App />
+    </ThemeProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

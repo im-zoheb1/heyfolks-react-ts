@@ -22,8 +22,8 @@ export const EntryHelper = styled.div`
 `;
 
 export const EntryHelperText = styled.div`
-  color: var(--white-color);
-  font-size: var(--text-big);
+  color: ${(props) => props.theme.colors.white};
+  font-size: ${(props) => props.theme.fontSize.big};
   margin-top: 1rem;
 `;
 

@@ -1,14 +1,9 @@
 import EntryHelper from 'components/Entry/EntryHelper';
 import EntryForm from 'components/Entry/EntryForm';
+import Button from 'components/Button';
 import { Viewport } from 'components/Utilities/Utils';
 
-import styled from 'styled-components';
-
-const Login = styled.div`
-  display: flex;
-  flex-direction: row;
-  height: 100%;
-`;
+import { Login } from './Login.element';
 
 const LoginPage = () => {
   const entryText: string = "Don't have an account?";
@@ -16,7 +11,9 @@ const LoginPage = () => {
   return (
     <Viewport>
       <Login>
-        <EntryHelper text={entryText}>adf</EntryHelper>
+        <EntryHelper text={entryText}>
+          <Button>asdf</Button>
+        </EntryHelper>
         <EntryForm></EntryForm>
       </Login>
     </Viewport>

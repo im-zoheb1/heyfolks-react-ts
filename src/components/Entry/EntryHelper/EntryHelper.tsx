@@ -1,6 +1,6 @@
 import React from 'react';
-import Logo from 'components/Logo';
 import { EntryHelper, EntryHelperText, EntryHelperButton } from './EntryHelper.elements';
+import Logo from 'components/Logo';
 
 interface Props {
   text: String;

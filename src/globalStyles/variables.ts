@@ -1,9 +1,9 @@
 const variables = `
 :root{
   --primary-color: #348ac7;
-  --primary-color-opacity: rgba(52, 138, 199, 0.6);
+  --primary-color-opacity: rgba(52, 138, 199, 0.7);
   --secondary-color: #7474bf;
-  --secondary-color-opacity: rgba(116, 116, 191, 0.6);
+  --secondary-color-opacity: rgba(116, 116, 191, 0.7);
   --accent-color: #53d1b3;
 
   --bg-color: #fefefe;
