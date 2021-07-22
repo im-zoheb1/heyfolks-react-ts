@@ -1,4 +1,14 @@
+import { kStringMaxLength } from 'buffer';
 import { DefaultTheme } from 'styled-components';
+
+const hexToRGB = (hex: string, alpha?: number) => {
+  const r: number = parseInt(hex.slice(1, 3), 16);
+  const g: number = parseInt(hex.slice(3, 5), 16);
+  const b: number = parseInt(hex.slice(5, 7), 16);
+
+  if (alpha) return `rgba(${r},${g},${b},${alpha})`;
+  else return `rgba(${r},${g},${b})`;
+};
 
 const myTheme: DefaultTheme = {
   colors: {
@@ -33,6 +43,17 @@ const myTheme: DefaultTheme = {
     medium: '1.8rem',
     small: '1.6rem',
     xsmall: '1.4rem',
+  },
+
+  gradient: {
+    get linear() {
+      const { primary, secondary } = myTheme.colors;
+      return `linear-gradient(to right bottom, ${primary}, ${secondary})`;
+    },
+    get linearTransparent() {
+      const { primary, secondary } = myTheme.colors;
+      return `linear-gradient(to right bottom, ${hexToRGB(primary, 0.65)}, ${hexToRGB(secondary, 0.65)})`;
+    },
   },
 };
 

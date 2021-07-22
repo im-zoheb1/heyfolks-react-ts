@@ -4,8 +4,7 @@ import styled from 'styled-components';
 import entryHelperBg from 'assets/images/entryHelperBg.png';
 
 export const EntryHelper = styled.div`
-  background: linear-gradient(to right bottom, var(--primary-color-opacity), var(--secondary-color-opacity)),
-    url(${entryHelperBg});
+  background: ${(props) => props.theme.gradient.linearTransparent}, url(${entryHelperBg});
   background-size: cover;
   background-position: center;
   height: 100%;

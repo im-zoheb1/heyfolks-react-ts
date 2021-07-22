@@ -35,5 +35,10 @@ declare module 'styled-components' {
       small: string;
       xsmall: string;
     };
+
+    gradient: {
+      linear: string;
+      linearTransparent: string;
+    };
   }
 }
