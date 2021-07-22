@@ -1,13 +1,13 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import Dashboard from 'hoc/Layout/Dashboard';
-import Login from 'containers/Login/Login';
-import Signup from 'containers/Signup';
-import Home from 'containers/Home';
-import FindFriends from 'containers/FindFriends';
-import Messages from 'containers/Messages';
-import Notifications from 'containers/Notifications';
-import Profile from 'containers/Profile';
+import Dashboard from 'hoc/Dashboard';
+import Login from 'views/Login';
+import Signup from 'views/Signup';
+import Home from 'views/Home';
+import Messages from 'views/Messages';
+import FindFriends from 'views/FindFriends';
+import Notifications from 'views/Notifications';
+import Profile from 'views/Profile';
 
 const App = () => {
   return (

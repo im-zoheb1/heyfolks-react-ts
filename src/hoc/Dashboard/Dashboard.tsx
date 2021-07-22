@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Sidenav from 'components/Navbar/Sidenav';
+import { Viewport } from 'components/Utilities/Utils';
 
 interface Props {
   children: React.ReactNode;
@@ -8,12 +9,12 @@ interface Props {
 
 const Dashboard = ({ children }: Props) => {
   return (
-    <div className="viewport">
+    <Viewport>
       <div className="dashboard">
         <Sidenav />
         {children}
       </div>
-    </div>
+    </Viewport>
   );
 };
 

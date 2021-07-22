@@ -1,18 +1,20 @@
 const variables = `
 :root{
   --primary-color: #348ac7;
+  --primary-color-opacity: rgba(52, 138, 199, 0.6);
   --secondary-color: #7474bf;
+  --secondary-color-opacity: rgba(116, 116, 191, 0.6);
   --accent-color: #53d1b3;
 
   --bg-color: #fefefe;
   --dashboard-bg-color: #f0f1f5;
-  --white-color: #ffffff
+  --white-color: #ffffff;
   --blue-color: #1976d2;
   --red-color: #dc3545;
   --green-color: #388e3c;
 
   --font-logo: 'Anton', sans-serif;
-  --font-text: 'Poppins', sans-serif;
+  --font-text: 'Nunito', sans-serif;
 
   --text-big: 2.2rem;
   --text-medium: 1.8rem;

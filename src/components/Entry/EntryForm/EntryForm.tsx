@@ -1,5 +1,7 @@
-const EntryForm = () => {
-  return <div>form</div>;
+import { EntryForm } from './EntryForm.elements';
+
+const TheEntryForm = () => {
+  return <EntryForm>form</EntryForm>;
 };
 
-export default EntryForm;
+export default TheEntryForm;

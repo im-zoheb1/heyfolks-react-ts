@@ -1,22 +1,20 @@
 import React from 'react';
-
-import Logo from 'components/Utilities/Logo';
+import Logo from 'components/Logo';
+import { EntryHelper, EntryHelperText, EntryHelperButton } from './EntryHelper.elements';
 
 interface Props {
   text: String;
   children: React.ReactNode;
 }
 
-const EntryHelper = ({ text, children }: Props) => {
+const TheEntryHelper = ({ text, children }: Props) => {
   return (
-    <div className="entry-helper">
-      <div className="entry-helper__logo">
-        <Logo />
-      </div>
-      <div className="entry-helper--text text--big">{text}</div>
-      <div className="entry-helper--btn">{children}</div>
-    </div>
+    <EntryHelper>
+      <Logo></Logo>
+      <EntryHelperText>{text}</EntryHelperText>
+      <EntryHelperButton>{children}</EntryHelperButton>
+    </EntryHelper>
   );
 };
 
-export default EntryHelper;
+export default TheEntryHelper;

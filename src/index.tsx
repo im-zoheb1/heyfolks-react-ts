@@ -9,7 +9,7 @@ import WebFont from 'webfontloader';
 
 WebFont.load({
   google: {
-    families: ['Poppins Web:300,400,500,600,700', 'Anton', 'sans-serif'],
+    families: ['Nunito Web:300,400,500,600,700', 'Anton', 'sans-serif'],
   },
 });
 
