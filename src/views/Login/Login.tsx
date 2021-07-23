@@ -1,6 +1,6 @@
 import EntryHelper from 'components/Entry/EntryHelper';
 import EntryForm from 'components/Entry/EntryForm';
-import Button from 'components/Button';
+import Button from 'components/UI/Button';
 import { Viewport } from 'components/Utilities/Utils';
 
 import { Login } from './Login.element';
@@ -12,7 +12,9 @@ const LoginPage = () => {
     <Viewport>
       <Login>
         <EntryHelper text={entryText}>
-          <Button>asdf</Button>
+          <Button border="pilled" size="lg" variant="flat" color="primary">
+            Sign Up
+          </Button>
         </EntryHelper>
         <EntryForm></EntryForm>
       </Login>

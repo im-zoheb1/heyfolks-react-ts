@@ -14,6 +14,8 @@ const myTheme: DefaultTheme = {
     primary: '#348ac7',
     secondary: '#7474bf',
     accent: '#53d1b3',
+    light: '#f2f2f2',
+    dark: '#333333',
     bgColor: '#fefefe',
     dashboardBgColor: '#f0f1f5',
     white: '#ffffff',
@@ -38,10 +40,10 @@ const myTheme: DefaultTheme = {
   },
 
   fontSize: {
-    big: '2.4rem',
-    medium: '1.8rem',
-    small: '1.6rem',
-    xsmall: '1.4rem',
+    lg: '2.4rem',
+    md: '1.8rem',
+    sm: '1.6rem',
+    xs: '1.4rem',
   },
 
   gradient: {

@@ -6,6 +6,8 @@ declare module 'styled-components' {
       primary: string;
       secondary: string;
       accent: string;
+      light: string;
+      dark: string;
       bgColor: string;
       dashboardBgColor: string;
       white: string;
@@ -30,10 +32,10 @@ declare module 'styled-components' {
     };
 
     fontSize: {
-      big: string;
-      medium: string;
-      small: string;
-      xsmall: string;
+      lg: string;
+      md: string;
+      sm: string;
+      xs: string;
     };
 
     gradient: {
