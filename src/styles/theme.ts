@@ -1,4 +1,3 @@
-import { kStringMaxLength } from 'buffer';
 import { DefaultTheme } from 'styled-components';
 
 const hexToRGB = (hex: string, alpha?: number) => {
@@ -35,11 +34,11 @@ const myTheme: DefaultTheme = {
 
   fonts: {
     logoFont: "'Anton', sans-serif",
-    textFont: "'Nunito', sans-serif'",
+    textFont: "'Nunito', sans-serif",
   },
 
   fontSize: {
-    big: '2.2rem',
+    big: '2.4rem',
     medium: '1.8rem',
     small: '1.6rem',
     xsmall: '1.4rem',
