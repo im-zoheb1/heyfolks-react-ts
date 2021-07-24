@@ -16,6 +16,8 @@ const myTheme: DefaultTheme = {
     accent: '#53d1b3',
     light: '#f2f2f2',
     dark: '#333333',
+    lightDark: '#555555',
+    muted: '#777777',
     bgColor: '#fefefe',
     dashboardBgColor: '#f0f1f5',
     white: '#ffffff',
@@ -41,9 +43,13 @@ const myTheme: DefaultTheme = {
 
   fontSize: {
     lg: '2.4rem',
-    md: '1.8rem',
+    md: '1.9rem',
     sm: '1.6rem',
     xs: '1.4rem',
+  },
+
+  heading: {
+    primary: '3.8rem',
   },
 
   gradient: {
@@ -53,7 +59,7 @@ const myTheme: DefaultTheme = {
     },
     get linearTransparent() {
       const { primary, secondary } = myTheme.colors;
-      return `linear-gradient(to right bottom, ${hexToRGB(primary, 0.65)}, ${hexToRGB(secondary, 0.65)})`;
+      return `linear-gradient(to right bottom, ${hexToRGB(primary, 0.6)}, ${hexToRGB(secondary, 0.6)})`;
     },
   },
 };

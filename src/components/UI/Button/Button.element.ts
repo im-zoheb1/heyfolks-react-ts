@@ -12,7 +12,6 @@ export const Button = styled.button<ButtonProps>`
   outline: none;
   letter-spacing: 0.5px;
   cursor: pointer;
-  display: inline;
   border: none;
   font-weight: 600;
   transition: background 0.2s ease-in-out;
@@ -21,6 +20,7 @@ export const Button = styled.button<ButtonProps>`
     if (size && size === 'lg') return theme.fontSize.md;
     else return theme.fontSize.md;
   }};
+
   /* border */
   border-radius: ${({ border, theme }) => (border ? theme.borderRadius[border] : theme.borderRadius.rounded)};
   /* padding */

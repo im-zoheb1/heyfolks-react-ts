@@ -8,6 +8,8 @@ declare module 'styled-components' {
       accent: string;
       light: string;
       dark: string;
+      lightDark: string;
+      muted: string;
       bgColor: string;
       dashboardBgColor: string;
       white: string;
@@ -36,6 +38,10 @@ declare module 'styled-components' {
       md: string;
       sm: string;
       xs: string;
+    };
+
+    heading: {
+      primary: string;
     };
 
     gradient: {
