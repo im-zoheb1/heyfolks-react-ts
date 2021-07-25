@@ -11,9 +11,12 @@ import { Viewport } from 'components/Utilities/Utils';
 import { Signup } from './Signup.element';
 
 const SignupPage = () => {
+  const history = useHistory();
   const entryText = 'Already have an account?';
 
-  const handleSignup = () => {};
+  const handleSignup = () => {
+    history.push('/home');
+  };
 
   return (
     <Viewport>
@@ -30,7 +33,7 @@ const SignupPage = () => {
               <FormInput type="email" placeholder="Email address" label="Email address" required></FormInput>
             </FormGroup>
             <FormGroup>
-              <FormInput type="password" placeholder="Password" label="Email address" required></FormInput>
+              <FormInput type="password" placeholder="Password" label="Password" required></FormInput>
             </FormGroup>
             <span>
               <Button border="pilled" size="lg" variant="dense" color="primary">

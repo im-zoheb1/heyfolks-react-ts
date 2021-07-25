@@ -75,8 +75,9 @@ export const FormInput = styled.input`
   position: relative;
   font-weight: 500;
   &::placeholder {
-    font-family: inherit;
     color: ${(props) => props.theme.colors.muted};
+    font-family: ${(props) => props.theme.fonts.textFont};
+    font-weight: 600;
   }
   &:valid:not(:placeholder-shown) ~ ${FormInputBorder}::after {
     width: 100%;

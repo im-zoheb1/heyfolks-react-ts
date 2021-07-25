@@ -17,7 +17,7 @@ const myTheme: DefaultTheme = {
     light: '#f2f2f2',
     dark: '#333333',
     lightDark: '#555555',
-    muted: '#777777',
+    muted: '#888888',
     bgColor: '#fefefe',
     dashboardBgColor: '#f0f1f5',
     white: '#ffffff',
