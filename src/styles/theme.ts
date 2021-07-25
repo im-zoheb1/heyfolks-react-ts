@@ -44,7 +44,7 @@ const myTheme: DefaultTheme = {
   fontSize: {
     lg: '2.4rem',
     md: '1.9rem',
-    sm: '1.6rem',
+    sm: '1.7rem',
     xs: '1.4rem',
   },
 
@@ -64,7 +64,11 @@ const myTheme: DefaultTheme = {
   },
 
   margin: {
-    gutter: '2rem',
+    gutter: '1.5rem',
+  },
+
+  padding: {
+    card: '1em 2em',
   },
 };
 

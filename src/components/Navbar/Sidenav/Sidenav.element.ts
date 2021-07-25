@@ -56,8 +56,16 @@ export const SidenavLinkIcon = styled.i`
   color: ${(props) => props.theme.colors.dark};
   font-size: 2.6rem !important;
 `;
+export const SidenavLinkText = styled.div`
+  font-size: ${(props) => props.theme.fontSize.md};
+  font-weight: 600;
+  margin-left: 2.5rem;
+  margin-top: -5px;
+  letter-spacing: 0.5px;
+`;
+
 export const SidenavLink = styled(NavLink)`
-  &.active {
+  &.active ${SidenavLinkText} {
     color: ${(props) => props.theme.colors.primary};
   }
   &.active ${SidenavLinkIcon} {
@@ -69,11 +77,4 @@ export const SidenavLink = styled(NavLink)`
   margin-bottom: 2rem;
   text-decoration: none;
   color: ${(props) => props.theme.colors.dark};
-`;
-export const SidenavLinkText = styled.div`
-  font-size: ${(props) => props.theme.fontSize.md};
-  font-weight: 600;
-  margin-left: 2.5rem;
-  margin-top: -5px;
-  letter-spacing: 0.5px;
 `;

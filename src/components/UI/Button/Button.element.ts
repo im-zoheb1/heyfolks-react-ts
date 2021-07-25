@@ -17,8 +17,8 @@ export const Button = styled.button<ButtonProps>`
   transition: background 0.2s ease-in-out;
   /* font-size */
   font-size: ${({ size, theme }) => {
-    if (size && size === 'lg') return theme.fontSize.md;
-    else return theme.fontSize.md;
+    if (size === 'lg') return theme.fontSize.md;
+    else return size ? theme.fontSize[size] : theme.fontSize.md;
   }};
 
   /* border */
@@ -26,6 +26,7 @@ export const Button = styled.button<ButtonProps>`
   /* padding */
   padding: ${({ size }) => {
     if (size === 'lg') return '1.6rem 4rem';
+    if (size === 'sm') return '1rem 1.6rem';
     return '1.2rem 3rem;';
   }};
 

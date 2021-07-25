@@ -52,5 +52,9 @@ declare module 'styled-components' {
     margin: {
       gutter: string;
     };
+
+    padding: {
+      card: string;
+    };
   }
 }
