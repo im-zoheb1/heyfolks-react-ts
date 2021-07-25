@@ -1,5 +1,2 @@
-const MansoryLayout = () => {
-  return <div></div>;
-};
-
-export default MansoryLayout;
+import { Mansory } from './Mansory.element';
+export default Mansory;

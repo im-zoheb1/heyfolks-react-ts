@@ -62,6 +62,10 @@ const myTheme: DefaultTheme = {
       return `linear-gradient(to right bottom, ${hexToRGB(primary, 0.6)}, ${hexToRGB(secondary, 0.6)})`;
     },
   },
+
+  margin: {
+    gutter: '2rem',
+  },
 };
 
 export { myTheme };

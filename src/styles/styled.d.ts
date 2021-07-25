@@ -48,5 +48,9 @@ declare module 'styled-components' {
       linear: string;
       linearTransparent: string;
     };
+
+    margin: {
+      gutter: string;
+    };
   }
 }
