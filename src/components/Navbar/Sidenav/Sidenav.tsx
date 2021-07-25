@@ -1,5 +1,3 @@
-import { NavLink } from 'react-router-dom';
-
 import {
   Sidenav,
   SidenavInner,
@@ -15,25 +13,53 @@ import {
   SidenavLinkText,
 } from './Sidenav.element';
 
-const TheSidenav = () => {
+import React from 'react';
+
+interface User {
+  img: string;
+  fullname: string;
+  username: string;
+}
+
+interface SidenavLinkItem {
+  icon: string;
+  iconSolid: string;
+  text: string;
+  href: string;
+}
+
+interface SidenavProps {
+  sidenavLinks: Array<SidenavLinkItem>;
+  user: User;
+}
+
+const TheSidenav: React.FC<SidenavProps> = ({ user, sidenavLinks }) => {
+  const linkItems: Array<JSX.Element> = sidenavLinks.map((link, index) => {
+    return (
+      <SidenavLink to={link.href} key={index} activeClassName="active">
+        <SidenavLinkIconHolder>
+          {window.location.pathname === link.href ? (
+            <SidenavLinkIcon className={link.iconSolid}></SidenavLinkIcon>
+          ) : (
+            <SidenavLinkIcon className={link.icon}></SidenavLinkIcon>
+          )}
+        </SidenavLinkIconHolder>
+        <SidenavLinkText>{link.text}</SidenavLinkText>
+      </SidenavLink>
+    );
+  });
+
   return (
     <Sidenav>
       <SidenavInner>
         <SidenavUserInfo>
           <SidenavUserImgHolder>
-            <SidenavUserImg></SidenavUserImg>
+            <SidenavUserImg src={user.img} alt={user.username}></SidenavUserImg>
           </SidenavUserImgHolder>
-          <SidenavFullname></SidenavFullname>
-          <SidenavUsername></SidenavUsername>
+          <SidenavFullname>{user.fullname}</SidenavFullname>
+          <SidenavUsername>@{user.username}</SidenavUsername>
         </SidenavUserInfo>
-        <SidenavLinks>
-          <SidenavLink>
-            <SidenavLinkIconHolder>
-              <SidenavLinkIcon></SidenavLinkIcon>
-            </SidenavLinkIconHolder>
-            <SidenavLinkText></SidenavLinkText>
-          </SidenavLink>
-        </SidenavLinks>
+        <SidenavLinks>{linkItems}</SidenavLinks>
       </SidenavInner>
     </Sidenav>
   );

@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 
 // background image
 import entryHelperBg from 'assets/images/entryHelperBg.png';
