@@ -20,7 +20,7 @@ const CreatePostCard: React.FC = () => {
         </CardBody>
         <CardFooter>
           <CreatePostFooter>
-            <Button size="sm">Post</Button>
+            <Button size="sm">Create Post</Button>
           </CreatePostFooter>
         </CardFooter>
       </Card>

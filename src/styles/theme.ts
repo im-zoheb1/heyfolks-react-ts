@@ -20,6 +20,7 @@ const myTheme: DefaultTheme = {
     muted: '#888888',
     bgColor: '#fefefe',
     dashboardBgColor: '#f0f1f5',
+    comment: '#f0f1f5b9',
     white: '#ffffff',
     blue: '#1976d2',
     red: '#dc3545',

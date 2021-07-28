@@ -12,6 +12,7 @@ declare module 'styled-components' {
       muted: string;
       bgColor: string;
       dashboardBgColor: string;
+      comment: string;
       white: string;
       blue: string;
       red: string;
