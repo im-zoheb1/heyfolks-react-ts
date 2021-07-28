@@ -10,7 +10,7 @@ const Home = () => {
     <HomeContainer>
       <Mansory>
         <MansoryItem>
-          <CreatePost></CreatePost>
+          <CreatePost>sdf</CreatePost>
         </MansoryItem>
         <MansoryItem>
           <PostCard></PostCard>
