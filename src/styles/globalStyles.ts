@@ -14,7 +14,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   html {
-    letter-spacing: 0.6px;
+    letter-spacing: 0.5px;
     font-size: 62.5%;
     text-rendering: optimizeLegibility;
   }

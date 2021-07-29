@@ -26,7 +26,7 @@ export const PostUsername = styled.div`
 export const PostAddress = styled.div`
   font-size: ${(props) => props.theme.fontSize.xs};
   color: ${(props) => props.theme.colors.muted};
-  font-weight: 400;
+  font-weight: 600;
 `;
 
 // POST BODY
@@ -35,6 +35,7 @@ export const PostBodyText = styled.div`
   font-size: ${(props) => props.theme.fontSize.sm};
   color: ${(props) => props.theme.colors.dark};
   padding-bottom: 1rem;
+  line-height: 1.5;
   padding-top: 1.5rem;
 `;
 
@@ -53,25 +54,25 @@ export const PostAction = styled.div`
     margin-right: 2rem;
   }
 `;
-export const PostActionIcon = styled.i`
+export const PostActionIcon = styled.i<{ isLiked?: boolean }>`
   margin-right: 0.5rem;
   font-size: 2.4rem;
-  color: ${(props) => props.theme.colors.dark};
+  color: ${(props) => (props.isLiked ? props.theme.colors.primary : props.theme.colors.dark)};
+  transition: color 0.1s ease-in-out;
   cursor: pointer;
 `;
-export const PostActionText = styled.div`
+export const PostActionText = styled.span`
   color: ${(props) => props.theme.colors.lightDark};
-  font-weight: 500;
-  font-size: ${(props) => props.theme.fontSize.xs};
+  font-weight: 600;
+  font-size: ${(props) => props.theme.fontSize.sm};
 `;
 
 // POST COMMENTS
-
 export const PostCommentInput = styled.div`
   padding-top: 1.2rem;
 `;
 export const PostComments = styled.div`
-  padding-top: 2.3rem;
+  padding-top: 2rem;
 `;
 export const PostComment = styled.div`
   display: flex;
@@ -91,13 +92,14 @@ export const PostCommentImg = styled.img`
 `;
 export const PostCommentText = styled.div`
   flex: 1;
-  font-size: ${(props) => props.theme.fontSize.xs};
+  font-size: calc(${(props) => props.theme.fontSize.sm} - 0.1rem);
   margin-left: 1.5rem;
   background-color: ${(props) => props.theme.colors.comment};
   color: ${(props) => props.theme.colors.dark};
   padding: 1rem 1.5rem;
   border: 1px solid rgba(71, 32, 32, 0.08);
   border-radius: 7px;
+  line-height: 1.35;
 `;
 export const PostMoreButton = styled.button`
   color: ${(props) => props.theme.colors.blue};
@@ -106,7 +108,6 @@ export const PostMoreButton = styled.button`
   padding: none;
   border: none;
   font-size: ${(props) => props.theme.fontSize.sm};
-  text-transform: capitalize;
   margin-top: 2rem;
   cursor: pointer;
   &:hover {

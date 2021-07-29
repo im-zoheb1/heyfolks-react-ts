@@ -17,7 +17,7 @@ const myTheme: DefaultTheme = {
     light: '#f2f2f2',
     dark: '#333333',
     lightDark: '#555555',
-    muted: '#888888',
+    muted: '#999999',
     bgColor: '#fefefe',
     dashboardBgColor: '#f0f1f5',
     comment: '#f0f1f5b9',
@@ -32,7 +32,7 @@ const myTheme: DefaultTheme = {
   },
 
   borderRadius: {
-    rounded: '5px',
+    rounded: '6px',
     pilled: '1000px',
     circled: '50%',
   },
@@ -46,7 +46,7 @@ const myTheme: DefaultTheme = {
     lg: '2.4rem',
     md: '1.9rem',
     sm: '1.7rem',
-    xs: '1.4rem',
+    xs: '1.45rem',
   },
 
   heading: {

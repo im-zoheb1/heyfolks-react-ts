@@ -1,14 +1,23 @@
+import React from 'react';
 import * as Styled from './Post.element';
 
-const PostHeader = () => {
+interface PostHeaderProps {
+  userInfo: {
+    name: string;
+    address: string;
+    image: string;
+  };
+}
+
+const PostHeader: React.FC<PostHeaderProps> = ({ userInfo }) => {
   return (
     <Styled.PostHeader>
       <Styled.PostHeaderImgHolder>
-        <Styled.PostHeaderImg></Styled.PostHeaderImg>
+        <Styled.PostHeaderImg src={userInfo.image}></Styled.PostHeaderImg>
       </Styled.PostHeaderImgHolder>
       <div>
-        <Styled.PostUsername></Styled.PostUsername>
-        <Styled.PostAddress></Styled.PostAddress>
+        <Styled.PostUsername>{userInfo.name}</Styled.PostUsername>
+        <Styled.PostAddress>{userInfo.address}</Styled.PostAddress>
       </div>
     </Styled.PostHeader>
   );

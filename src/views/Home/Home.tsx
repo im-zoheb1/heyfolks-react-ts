@@ -1,22 +1,27 @@
-import { HomeContainer } from './Home.element';
+import * as Styled from './Home.element';
 import Mansory from 'components/UI/Mansory/Mansory';
 import MansoryItem from 'components/UI/Mansory/MansoryItem';
-
 import CreatePost from 'components/CreatePost';
 import PostCard from 'components/PostCard';
 
+import posts from 'data/posts';
+
 const Home = () => {
+  const getPosts = posts.map((post) => (
+    <MansoryItem key={post.id}>
+      <PostCard post={post}></PostCard>
+    </MansoryItem>
+  ));
+
   return (
-    <HomeContainer>
+    <Styled.HomeContainer>
       <Mansory>
         <MansoryItem>
-          <CreatePost>sdf</CreatePost>
+          <CreatePost></CreatePost>
         </MansoryItem>
-        <MansoryItem>
-          <PostCard></PostCard>
-        </MansoryItem>
+        {getPosts}
       </Mansory>
-    </HomeContainer>
+    </Styled.HomeContainer>
   );
 };
 

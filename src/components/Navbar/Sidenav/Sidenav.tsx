@@ -1,17 +1,4 @@
-import {
-  Sidenav,
-  SidenavInner,
-  SidenavUserInfo,
-  SidenavUserImgHolder,
-  SidenavUserImg,
-  SidenavFullname,
-  SidenavUsername,
-  SidenavLinks,
-  SidenavLink,
-  SidenavLinkIconHolder,
-  SidenavLinkIcon,
-  SidenavLinkText,
-} from './Sidenav.element';
+import * as Styled from './Sidenav.element';
 
 import React from 'react';
 
@@ -36,32 +23,32 @@ interface SidenavProps {
 const TheSidenav: React.FC<SidenavProps> = ({ user, sidenavLinks }) => {
   const linkItems: Array<JSX.Element> = sidenavLinks.map((link, index) => {
     return (
-      <SidenavLink to={link.href} key={index} activeClassName="active">
-        <SidenavLinkIconHolder>
+      <Styled.SidenavLink to={link.href} key={index} activeClassName="active">
+        <Styled.SidenavLinkIconHolder>
           {window.location.pathname === link.href ? (
-            <SidenavLinkIcon className={link.iconSolid}></SidenavLinkIcon>
+            <Styled.SidenavLinkIcon className={link.iconSolid}></Styled.SidenavLinkIcon>
           ) : (
-            <SidenavLinkIcon className={link.icon}></SidenavLinkIcon>
+            <Styled.SidenavLinkIcon className={link.icon}></Styled.SidenavLinkIcon>
           )}
-        </SidenavLinkIconHolder>
-        <SidenavLinkText>{link.text}</SidenavLinkText>
-      </SidenavLink>
+        </Styled.SidenavLinkIconHolder>
+        <Styled.SidenavLinkText>{link.text}</Styled.SidenavLinkText>
+      </Styled.SidenavLink>
     );
   });
 
   return (
-    <Sidenav>
-      <SidenavInner>
-        <SidenavUserInfo>
-          <SidenavUserImgHolder>
-            <SidenavUserImg src={user.img} alt={user.username}></SidenavUserImg>
-          </SidenavUserImgHolder>
-          <SidenavFullname>{user.fullname}</SidenavFullname>
-          <SidenavUsername>@{user.username}</SidenavUsername>
-        </SidenavUserInfo>
-        <SidenavLinks>{linkItems}</SidenavLinks>
-      </SidenavInner>
-    </Sidenav>
+    <Styled.Sidenav>
+      <Styled.SidenavInner>
+        <Styled.SidenavUserInfo>
+          <Styled.SidenavUserImgHolder>
+            <Styled.SidenavUserImg src={user.img} alt={user.username}></Styled.SidenavUserImg>
+          </Styled.SidenavUserImgHolder>
+          <Styled.SidenavFullname>{user.fullname}</Styled.SidenavFullname>
+          <Styled.SidenavUsername>@{user.username}</Styled.SidenavUsername>
+        </Styled.SidenavUserInfo>
+        <Styled.SidenavLinks>{linkItems}</Styled.SidenavLinks>
+      </Styled.SidenavInner>
+    </Styled.Sidenav>
   );
 };
 

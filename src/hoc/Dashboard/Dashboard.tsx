@@ -2,7 +2,7 @@ import React from 'react';
 
 import Sidenav from 'components/Navbar/Sidenav';
 import { Viewport } from 'components/Utilities/Utils';
-import { Dashboard } from './Dashboard.element';
+import * as Styled from './Dashboard.element';
 
 import ProfileImage from 'assets/images/user.png';
 import sidenavLinks from 'data/navbarData';
@@ -26,10 +26,10 @@ const TheDashboard = ({ children }: Props) => {
 
   return (
     <Viewport>
-      <Dashboard>
+      <Styled.Dashboard>
         <Sidenav user={user} sidenavLinks={sidenavLinks} />
         {children}
-      </Dashboard>
+      </Styled.Dashboard>
     </Viewport>
   );
 };

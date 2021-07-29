@@ -1,5 +1,9 @@
 import styled from 'styled-components/macro';
 
+interface FormInputProps {
+  inputSize?: 'sm' | 'md' | 'lg';
+}
+
 // FORM
 export const Form = styled.form`
   flex: 1;
@@ -26,9 +30,14 @@ export const FormInputHolder = styled.div`
   width: 100%;
 `;
 
-export const FormInputBorder = styled.div`
+export const FormInputBorder = styled.div<FormInputProps>`
   width: 100%;
-  height: 3px;
+  height: ${(props) => {
+    if (props.inputSize === 'md') {
+      return '2px';
+    }
+    return '3px';
+  }};
   background-color: ${(props) => props.theme.colors.muted};
   margin-top: 1px;
   position: relative;
@@ -62,13 +71,18 @@ export const FormInputLabel = styled.label`
   transition: all 0.3s;
 `;
 
-export const FormInput = styled.input`
+export const FormInput = styled.input<FormInputProps>`
   letter-spacing: 0.5px;
   border: none;
   outline: none;
   width: 100%;
-  font-size: calc(${({ theme }) => theme.fontSize.lg} - 0.2rem);
-  padding: 1rem 0.6rem;
+  font-size: calc(${({ theme, inputSize }) => (inputSize ? theme.fontSize[inputSize] : theme.fontSize.lg)} - 0.2rem);
+  padding: ${(props) => {
+    if (props.inputSize === 'md') {
+      return '0.5rem 0.5rem';
+    }
+    return '1rem 0.5rem';
+  }};
   background-color: transparent;
   color: ${(props) => props.theme.colors.dark};
   display: block;

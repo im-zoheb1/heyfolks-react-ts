@@ -7,3 +7,13 @@ export const Dashboard = styled.div`
   width: 100%;
   height: 100%;
 `;
+
+export const DashboardView = styled.div`
+  flex: 1;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+`;

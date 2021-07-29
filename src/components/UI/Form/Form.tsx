@@ -4,7 +4,7 @@ import { Form, FormTitle } from './Form.element';
 
 interface FormProps {
   children: React.ReactNode;
-  title: string;
+  title?: string;
   onSubmit(): void;
 }
 
@@ -16,7 +16,7 @@ const TheForm: React.FC<FormProps> = ({ title, children, onSubmit }) => {
 
   return (
     <Form onSubmit={handleSubmit}>
-      <FormTitle>{title}</FormTitle>
+      {title && <FormTitle>{title}</FormTitle>}
       {children}
     </Form>
   );

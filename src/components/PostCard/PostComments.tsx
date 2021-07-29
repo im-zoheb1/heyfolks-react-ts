@@ -1,18 +1,30 @@
+import React from 'react';
 import * as Styled from './Post.element';
+import FormInput from 'components/UI/Form/FormInput';
 
-const PostComments = () => {
+interface commentProps {
+  comment: {
+    commentImage: string;
+    commentText: string;
+  }
+}
+
+const PostComments: React.FC<commentProps> = ({ comment }) => {
+
   return (
     <>
-      <Styled.PostCommentInput></Styled.PostCommentInput>
+      <Styled.PostCommentInput>
+        <FormInput size="md" type="text" placeholder="Write a comment"></FormInput>
+      </Styled.PostCommentInput>
       <Styled.PostComments>
         <Styled.PostComment>
           <Styled.PostCommentImgHolder>
-            <Styled.PostCommentImg></Styled.PostCommentImg>
+            <Styled.PostCommentImg src={comment.commentImage}></Styled.PostCommentImg>
           </Styled.PostCommentImgHolder>
-          <Styled.PostCommentText></Styled.PostCommentText>
+          <Styled.PostCommentText>{comment.commentText}</Styled.PostCommentText>
         </Styled.PostComment>
       </Styled.PostComments>
-      <Styled.PostMoreButton></Styled.PostMoreButton>
+      <Styled.PostMoreButton>more</Styled.PostMoreButton>
     </>
   );
 };
