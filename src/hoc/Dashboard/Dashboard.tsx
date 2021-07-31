@@ -28,7 +28,7 @@ const TheDashboard = ({ children }: Props) => {
     <Viewport>
       <Styled.Dashboard>
         <Sidenav user={user} sidenavLinks={sidenavLinks} />
-        {children}
+        <Styled.DashboardView>{children}</Styled.DashboardView>
       </Styled.Dashboard>
     </Viewport>
   );

@@ -5,12 +5,11 @@ const posts = [
     image: 'https://randomuser.me/api/portraits/med/men/23.jpg',
     city: 'San Vito al Tagliamento',
     country: 'Kyrgyzstan',
-    text: 'risus. Donec egestas. Aliquam nec enim. Nunc ut erat. Sed nunc est, mollis non, cursus non, egestas a, dui. Cras pellentesque. Sed dictum. Proin eget odio. Aliquam vulputate ullamcorper magna. Sed eu eros. Nam consequat dolor vitae dolor. Donec fringilla. Donec feugiat metus sit amet ante. Vivamus non lorem vitae odio sagittis semper. Nam tempor',
+    text: 'As I mentioned, we will examine choice overload as it affects a number of areas in human experience that are far from trivial. But to build the case for what I mean by “overload,” we will start at the bottom of the hierarchy of needs and work our way up. We’ll begin by doing some more shopping.',
     likes: 108,
     comments: 89,
     commentImage: 'https://randomuser.me/api/portraits/med/men/52.jpg',
-    commentText:
-      'turpis nec mauris blandit mattis. Cras eget nisi dictum augue malesuada malesuada. Integer id magna et ipsum cursus',
+    commentText: 'My neighborhood supermarket is not a particularly large store.',
   },
   {
     id: 2,
@@ -18,12 +17,11 @@ const posts = [
     image: 'https://randomuser.me/api/portraits/med/men/32.jpg',
     city: 'Urbe',
     country: 'Sri Lanka',
-    text: 'sodales nisi magna sed dui. Fusce aliquam, enim nec tempus scelerisque, lorem ipsum sodales purus, in molestie tortor nibh sit amet orci. Ut sagittis lobortis mauris. Suspendisse aliquet molestie tellus. Aenean egestas hendrerit neque. In ornare sagittis felis. Donec tempor, est ac mattis semper, dui lectus rutrum urna, nec luctus felis purus ac tellus. Suspendisse sed dolor. Fusce mi lorem, vehicula et, rutrum',
+    text: 'Heading down the homestretch, I encountered 22 types of frozen waffles. And just before the checkout (paper or plastic; cash or credit or debit), there was a salad bar that offered 55 different items.',
     likes: 125,
     comments: 32,
     commentImage: 'https://randomuser.me/api/portraits/med/men/53.jpg',
-    commentText:
-      'eu dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eget magna. Suspendisse tristique neque venenatis lacus. Etiam',
+    commentText: 'A typical supermarket carries more than 30,000 items.',
   },
   {
     id: 3,
@@ -31,12 +29,11 @@ const posts = [
     image: 'https://randomuser.me/api/portraits/med/men/16.jpg',
     city: 'Husum',
     country: 'Heard Island and Mcdonald Islands',
-    text: 'interdum enim non nisi. Aenean eget metus. In nec orci. Donec nibh. Quisque nonummy ipsum non arcu. Vivamus sit amet risus. Donec egestas. Aliquam nec enim. Nunc ut erat. Sed nunc est, mollis non,',
+    text: 'But what if, with all these choices, we find ourselves in the bind of wanting to watch two shows broadcast in the same time slot? Thanks to VCRs, that’s no longer a problem. Watch one, and tape one for later. Or, for the real enthusiasts among us, there are “picture-in-picture” TVs that allow us to watch two shows at the same time.',
     likes: 114,
     comments: 77,
     commentImage: 'https://randomuser.me/api/portraits/med/men/54.jpg',
-    commentText:
-      'ac mattis ornare, lectus ante dictum mi, ac mattis velit justo nec ante. Maecenas mi felis, adipiscing fringilla, porttitor',
+    commentText: 'The same thing has begun to happen with electric power. Companies are now competing for our business in many parts of the country.',
   },
   {
     id: 4,
@@ -44,26 +41,26 @@ const posts = [
     image: 'https://randomuser.me/api/portraits/med/men/15.jpg',
     city: 'Froidchapelle',
     country: 'Bosnia and Herzegovina',
-    text: 'et magnis dis parturient montes, nascetur ridiculus mus. Proin vel arcu eu odio tristique pharetra. Quisque ac libero nec ligula consectetuer rhoncus. Nullam velit dui, semper et, lacinia vitae, sodales at, velit. Pellentesque ultricies dignissim lacus. Aliquam rutrum lorem ac risus. Morbi metus. Vivamus euismod urna. Nullam lobortis quam a felis ullamcorper viverra. Maecenas iaculis aliquet diam. Sed diam lorem, auctor quis, tristique ac,',
+    text: 'The uncertainties were savage, and I could not bear the possibility of making the wrong call. Even if I made what I was sure was the right choice for her, I could not live with the guilt if something went wrong...I needed Hunter’s physicians to bear the responsibility: they could live with the consequences, good or bad.',
     likes: 164,
     comments: 70,
     commentImage: 'https://randomuser.me/api/portraits/med/men/55.jpg',
     commentText:
-      'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin vel arcu eu odio tristique pharetra. Quisque ac libero nec',
+      'The Internet can give us information that is absolutely up-to-the-minute, but as a resource, it is democratic to a fault—everyone with a computer and an Internet hookup can express their opinion, whether they know anything or not.',
   },
-  {
+  /* {
     id: 5,
     name: 'Beck',
     image: 'https://randomuser.me/api/portraits/med/men/14.jpg',
     city: 'Landau',
     country: 'Tajikistan',
-    text: 'quis diam luctus lobortis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Mauris ut quam vel sapien imperdiet ornare. In faucibus. Morbi vehicula. Pellentesque tincidunt tempus risus. Donec egestas. Duis ac arcu. Nunc mauris. Morbi non sapien molestie orci tincidunt adipiscing. Mauris molestie pharetra nibh. Aliquam ornare, libero at auctor ullamcorper,',
+    text: 'Unfortunately, most people give substantial weight to this kind of anecdotal “evidence,” perhaps so much so that it will cancel out the positive recommendation found in Consumer Reports. Most of us give weight to these kinds of stories because they are extremely vivid and based on a personal, detailed, face-to-face account.',
     likes: 54,
     comments: 81,
     commentImage: 'https://randomuser.me/api/portraits/med/men/56.jpg',
-    commentText: 'ultrices sit amet, risus. Donec nibh enim, gravida sit amet, dapibus id,',
-  },
-  {
+    commentText: 'There are many examples of the availability',
+  }, */
+  /* {
     id: 6,
     name: 'Cody',
     image: 'https://randomuser.me/api/portraits/med/men/13.jpg',
@@ -73,8 +70,7 @@ const posts = [
     likes: 137,
     comments: 112,
     commentImage: 'https://randomuser.me/api/portraits/med/men/57.jpg',
-    commentText:
-      'hendrerit id, ante. Nunc mauris sapien, cursus in, hendrerit consectetuer, cursus et, magna.',
+    commentText: 'hendrerit id, ante. Nunc mauris sapien, cursus in, hendrerit consectetuer, cursus et, magna.',
   },
   {
     id: 7,
@@ -86,8 +82,7 @@ const posts = [
     likes: 93,
     comments: 118,
     commentImage: 'https://randomuser.me/api/portraits/med/men/58.jpg',
-    commentText:
-      'lorem, luctus ut, pellentesque eget, dictum placerat, augue. Sed molestie. Sed id risus quis diam',
+    commentText: 'lorem, luctus ut, pellentesque eget, dictum placerat, augue. Sed molestie. Sed id risus quis diam',
   },
   {
     id: 8,
@@ -99,8 +94,7 @@ const posts = [
     likes: 193,
     comments: 108,
     commentImage: 'https://randomuser.me/api/portraits/med/men/62.jpg',
-    commentText:
-      'Sed nulla ante, iaculis nec, eleifend non, dapibus rutrum, justo. Praesent luctus. Curabitur',
+    commentText: 'Sed nulla ante, iaculis nec, eleifend non, dapibus rutrum, justo. Praesent luctus. Curabitur',
   },
   {
     id: 9,
@@ -112,8 +106,7 @@ const posts = [
     likes: 122,
     comments: 76,
     commentImage: 'https://randomuser.me/api/portraits/med/men/64.jpg',
-    commentText:
-      'ullamcorper, velit in aliquet lobortis, nisi nibh lacinia orci, consectetuer euismod est arcu ac orci. Ut semper',
+    commentText: 'ullamcorper, velit in aliquet lobortis, nisi nibh lacinia orci, consectetuer euismod est arcu ac orci. Ut semper',
   },
   {
     id: 10,
@@ -125,8 +118,7 @@ const posts = [
     likes: 165,
     comments: 35,
     commentImage: 'https://randomuser.me/api/portraits/med/men/65.jpg',
-    commentText:
-      'Curabitur ut odio vel est tempor bibendum. Donec felis orci, adipiscing non, luctus sit amet, faucibus',
+    commentText: 'Curabitur ut odio vel est tempor bibendum. Donec felis orci, adipiscing non, luctus sit amet, faucibus',
   },
   {
     id: 11,
@@ -150,8 +142,7 @@ const posts = [
     likes: 127,
     comments: 27,
     commentImage: 'https://randomuser.me/api/portraits/med/men/72.jpg',
-    commentText:
-      'leo elementum sem, vitae aliquam eros turpis non enim. Mauris quis turpis vitae purus gravida sagittis. Duis gravida. Praesent eu',
+    commentText: 'The same thing has begun to happen with electric power. Companies are now competing for our business in many parts of the country.',
   },
   {
     id: 13,
@@ -163,8 +154,7 @@ const posts = [
     likes: 87,
     comments: 117,
     commentImage: 'https://randomuser.me/api/portraits/med/men/73.jpg',
-    commentText:
-      'leo, in lobortis tellus justo sit amet nulla. Donec non justo. Proin non massa non ante bibendum ullamcorper.',
+    commentText: 'leo, in lobortis tellus justo sit amet nulla. Donec non justo. Proin non massa non ante bibendum ullamcorper.',
   },
   {
     id: 14,
@@ -176,8 +166,7 @@ const posts = [
     likes: 177,
     comments: 58,
     commentImage: 'https://randomuser.me/api/portraits/med/men/15.jpg',
-    commentText:
-      'rutrum urna, nec luctus felis purus ac tellus. Suspendisse sed dolor. Fusce mi lorem, vehicula et, rutrum eu, ultrices sit',
+    commentText: 'rutrum urna, nec luctus felis purus ac tellus. Suspendisse sed dolor. Fusce mi lorem, vehicula et, rutrum eu, ultrices sit',
   },
   {
     id: 15,
@@ -189,8 +178,7 @@ const posts = [
     likes: 47,
     comments: 29,
     commentImage: 'https://randomuser.me/api/portraits/med/men/74.jpg',
-    commentText:
-      'ut ipsum ac mi eleifend egestas. Sed pharetra, felis eget varius ultrices, mauris ipsum porta elit, a feugiat tellus lorem eu metus. In lorem.',
+    commentText: 'ut ipsum ac mi eleifend egestas. Sed pharetra, felis eget varius ultrices, mauris ipsum porta elit, a feugiat tellus lorem eu metus. In lorem.',
   },
   {
     id: 16,
@@ -202,8 +190,7 @@ const posts = [
     likes: 46,
     comments: 26,
     commentImage: 'https://randomuser.me/api/portraits/med/men/15.jpg',
-    commentText:
-      'luctus aliquet odio. Etiam ligula tortor, dictum eu, placerat eget, venenatis a, magna. Lorem ipsum dolor sit amet,',
+    commentText: 'luctus aliquet odio. Etiam ligula tortor, dictum eu, placerat eget, venenatis a, magna. Lorem ipsum dolor sit amet,',
   },
   {
     id: 17,
@@ -215,8 +202,7 @@ const posts = [
     likes: 63,
     comments: 113,
     commentImage: 'https://randomuser.me/api/portraits/med/men/76.jpg',
-    commentText:
-      'Aenean euismod mauris eu elit. Nulla facilisi. Sed neque. Sed eget lacus. Mauris non dui nec urna suscipit nonummy. Fusce fermentum fermentum',
+    commentText: 'Aenean euismod mauris eu elit. Nulla facilisi. Sed neque. Sed eget lacus. Mauris non dui nec urna suscipit nonummy. Fusce fermentum fermentum',
   },
   {
     id: 18,
@@ -228,8 +214,7 @@ const posts = [
     likes: 53,
     comments: 82,
     commentImage: 'https://randomuser.me/api/portraits/med/men/91.jpg',
-    commentText:
-      'rutrum urna, nec luctus felis purus ac tellus. Suspendisse sed dolor. Fusce mi lorem, vehicula et,',
+    commentText: 'rutrum urna, nec luctus felis purus ac tellus. Suspendisse sed dolor. Fusce mi lorem, vehicula et,',
   },
   {
     id: 19,
@@ -241,8 +226,7 @@ const posts = [
     likes: 166,
     comments: 106,
     commentImage: 'https://randomuser.me/api/portraits/med/men/41.jpg',
-    commentText:
-      'molestie sodales. Mauris blandit enim consequat purus. Maecenas libero est, congue a, aliquet vel, vulputate eu, odio. Phasellus at augue id ante dictum',
+    commentText: 'molestie sodales. Mauris blandit enim consequat purus. Maecenas libero est, congue a, aliquet vel, vulputate eu, odio. Phasellus at augue id ante dictum',
   },
   {
     id: 20,
@@ -255,7 +239,7 @@ const posts = [
     comments: 41,
     commentImage: 'https://randomuser.me/api/portraits/med/men/42.jpg',
     commentText: 'risus. Nunc ac sem ut dolor dapibus gravida. Aliquam tincidunt, nunc ac mattis ornare,',
-  },
+  }, */
 ];
 
 export default posts;

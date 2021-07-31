@@ -32,7 +32,7 @@ const myTheme: DefaultTheme = {
   },
 
   borderRadius: {
-    rounded: '6px',
+    rounded: '5px',
     pilled: '1000px',
     circled: '50%',
   },

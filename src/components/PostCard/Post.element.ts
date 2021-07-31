@@ -43,7 +43,7 @@ export const PostBodyText = styled.div`
 export const PostActions = styled.div`
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   padding: 0.5rem;
 `;
 export const PostAction = styled.div`
@@ -51,7 +51,7 @@ export const PostAction = styled.div`
   flex-direction: row;
   align-items: center;
   &:not(:last-child) {
-    margin-right: 2rem;
+    margin-right: 4rem;
   }
 `;
 export const PostActionIcon = styled.i<{ isLiked?: boolean }>`
